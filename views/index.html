@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>URL Shortener</title>
+    <link rel="shortcut icon" href="https://nesh.gq/icon.png" type="icon/png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="/public/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <h2>URL Shortener Microservice</h2>
+
+    <form action="api/shorturl" method="POST">
+      <label for="url_input">URL to be shortened</label>
+      <input
+        id="url_input"
+        type="text"
+        name="url"
+        value="https://www.freecodecamp.org"
+      />
+      <input type="submit" value="Shorten" />
+    </form>
+  </body>
+</html>
